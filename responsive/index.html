@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+  </head>
+  <style>
+    .cont {
+      display: grid;
+      grid-template-columns: 20% 80%;
+      text-align: center;
+      align-items: center;
+      font-family: sans-serif;
+      background-color: rgb(135, 135, 199);
+      color: white;
+    }
+    a {
+      text-decoration: none;
+      padding-left: 70px;
+      color: white;
+    }
+    a:hover {
+      color: rgb(238, 255, 0);
+    }
+    .btn {
+      display: none;
+      width: 50px;
+      height: 30px;
+    }
+
+    @media screen and (max-width: 770px) {
+      /* .cont .logo:not(:first-child) {
+        display: none;
+      } */
+      .cont .all-link {
+        display: none;
+      }
+      .logo {
+        display: block;
+      }
+      .cont .btn {
+        display: block;
+      }
+    }
+  </style>
+  <body>
+    <div class="cont" id="mycont">
+      <div class="logo">
+        <h1>Logo</h1>
+      </div>
+      <div class="all-link">
+        <a href="###">Home</a>
+        <a href="###">About</a>
+        <a href="###">Carrer</a>
+        <a href="###">Servies</a>
+        <a href="###">Login</a>
+      </div>
+      <div id="btnb">
+        <button class="btn" onclick="buttonFun()">&&</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let x = document.getElementById("mycont");
+  function buttonFun() {
+    if (x.className === "mycont") {
+      x.className += "responsive";
+    } else {
+      x.className += "mycont";
+    }
+  }
+</script>
