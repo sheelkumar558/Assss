@@ -1,0 +1,110 @@
+.container {
+    /* border: solid red 2px; */
+    padding: 2rem 2rem;
+    height: 100%;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 2rem;
+    /* border: 1px solid black; */
+  }
+  .receipe_day > h1 {
+    margin: 1.5rem auto;
+    width: fit-content;
+    font-size: 3.5rem;
+    color: #ff3838;
+    text-decoration: underline 3px solid #666;
+  }
+  .receipe_day > h1 a {
+    color: #ff3838;
+  }
+  .receipe {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+  }
+  .foodImg {
+    width: 35%;
+  }
+  .foodImg img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5rem;
+  }
+  .foodImg img:hover {
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 10px 20px;
+    cursor: pointer;
+  }
+  .foodDiscription {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-justify: auto;
+  }
+  .foodDiscription h1 {
+    color: #666;
+    margin: 0;
+    font-size: 5rem;
+  }
+  .foodDiscription p {
+    font-size: 2rem;
+    /* border: 1px solid black; */
+   
+  }
+  .foodDiscription button {
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    margin: 10px;
+    color: #ff3838;
+    background-color: #f7f7f7;
+    outline: 1px solid #ff3838;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s linear;
+  }
+  
+  .foodDiscription button:hover {
+    color: #fff;
+    background-color: #ff3838;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .container {
+      width: 90vw;
+        padding: 2rem 2rem;
+    }
+  
+    .receipe {
+      flex-direction: column;
+    }
+    .foodImg {
+      width: 80%;
+      margin: auto
+    }
+    .foodDiscription{
+      width: 100%;
+    }
+    .foodDiscription h1{
+      margin-top: 2rem;
+    }
+  
+  
+  }
+  @media (max-width: 426px) {
+    .container {
+      width: 90vw;
+        padding: 1rem 1rem;
+    }
+  
+    .receipe {
+      flex-direction: column;
+    }
+    .foodImg {
+      width: 100%;
+    }
+    .foodDiscription{
+      width: 100%;
+    }
+  }
+  
